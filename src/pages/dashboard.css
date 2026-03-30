@@ -1,0 +1,155 @@
+/* .dashboard-card
+{
+    display: flex;
+    flex-direction: column;
+    
+    width: 80%;
+    height: 100px;
+    margin: 10px auto ;
+background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.dashboard-card-direction
+{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+.edit-btn
+{
+      color: aliceblue;
+  background-color: rgb(0, 153, 255);
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.delete-btn
+{
+      color: aliceblue;
+  background-color: red;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid white;
+} */
+
+
+.dashboard-page {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #f5f7fb;
+  height: 100vh;
+   
+}
+
+.dashboard-card {
+  width: 100%;
+  max-width: 800px;
+  
+}
+/* Link
+{
+  text-decoration: none;
+  color: black;
+} */
+
+/* Each post card */
+.dashboard-card-direction {
+    
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* Text styling */
+.dashboard-card ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+
+}
+
+li {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+li strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.dashboard-des
+{
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Buttons container */
+.dashboard-card-direction > div {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  
+}
+
+/* Edit button */
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #43a047;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Empty state */
+.dashboard-card h4 {
+  text-align: center;
+  margin-top: 10px;
+  color: #777;
+}
+
+.dashboard-card svg {
+  display: block;
+  margin: 40px auto 10px;
+  color: #aaa;
+  width: 40px;
+  height: 40px;
+}

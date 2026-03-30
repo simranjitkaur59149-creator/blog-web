@@ -1,0 +1,41 @@
+.post-card {
+  display: grid;
+  grid-template-rows: 10% 1fr;
+  width: 90%;
+  gap: 30px;
+  margin: 0 auto;
+
+  border-radius: 20px;
+  background-color: white;
+}
+.title {
+  width: 100%;
+  padding: 5px;
+}
+.description {
+  height: 50vh;
+  width: 100%;
+
+  padding: 10px;
+}
+.post-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+font-weight: 600;
+  width: 100%;
+}
+.post-btn {
+  color: aliceblue;
+  background-color: rgb(0, 153, 255);
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+.cancel-btn {
+  color: aliceblue;
+  background-color: red;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid white;
+}

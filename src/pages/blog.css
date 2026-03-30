@@ -1,0 +1,48 @@
+.blog-page {
+  background-color: wheat;
+  height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+}
+.blog-card {
+  background-color: #ffffff;
+  border: 2px solid black;
+  height: fit-content;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 30px ;
+}
+.blog-page h1 {
+  text-align: center;
+  font-weight: 800;
+}
+.blog-page h6 {
+  width: 100%;
+  padding: 10px;
+}
+.blog-page button{
+    width: auto;
+
+    background-color: beige;
+    border-radius: 10px;
+    /* margin: 10px; */
+}
+.blog-page button:hover
+{
+    background-color: aqua;
+}
+.liked
+{
+    fill: red;
+    
+}
+.error-page
+{
+  width: 80%;
+  margin: 40px auto;
+}
