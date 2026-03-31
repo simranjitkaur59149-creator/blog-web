@@ -24,7 +24,7 @@ export default function Login() {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "https://blog-1-d8f0.onrender.com/api/auth/login",
+        "https://blog-web-backend-5bci.onrender.com/api/auth/login",
         {
           email,
           password,

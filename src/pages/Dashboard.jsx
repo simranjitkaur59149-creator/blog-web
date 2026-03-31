@@ -14,7 +14,7 @@ useEffect(()=>
 {
   async function fetchMyPosts() {
   try {
-    const response = await axios.get("https://blog-1-d8f0.onrender.com/api/blog/allblogbyid",  {
+    const response = await axios.get("https://blog-web-backend-5bci.onrender.com/api/blog/allblogbyid",  {
     headers: {
       Authorization: `Bearer ${token}`
     }
@@ -39,7 +39,7 @@ if(token){
 
   const handleDelete=async(index,blogId,token)=>{
     try {
-      const response= await axios.delete(`https://blog-1-d8f0.onrender.com/api/blog/${blogId}`,{
+      const response= await axios.delete(`https://blog-web-backend-5bci.onrender.com/api/blog/${blogId}`,{
         headers:{
           Authorization:`Bearer ${token}`
         }

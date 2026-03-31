@@ -20,7 +20,7 @@ export default function Signup() {
 
   const handleSignup = async () => {
     try {
-      const res = await axios.post("https://blog-1-d8f0.onrender.com/api/auth/register", {
+      const res = await axios.post("https://blog-web-backend-5bci.onrender.com/api/auth/register", {
         name,
         email,
         password,

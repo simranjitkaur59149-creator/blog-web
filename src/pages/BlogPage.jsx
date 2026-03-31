@@ -19,7 +19,7 @@ export default function BlogPage() {
   async function fetchPostBySlug() {
     try {
       const res = await axios.get(
-        `https://blog-1-d8f0.onrender.com/api/blog/${slug}`
+        `https://blog-web-backend-5bci.onrender.com/api/blog/${slug}`
       );
 
       const data = res.data;
@@ -45,7 +45,7 @@ export default function BlogPage() {
   const handleLikes = async () => {
     try {
       const res = await axios.post(
-        `https://blog-1-d8f0.onrender.com/api/blog/${post._id}/like`,
+        `https://blog-web-backend-5bci.onrender.com/api/blog/${post._id}/like`,
         {},
         {
           headers: {
