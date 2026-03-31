@@ -35,7 +35,7 @@ export default function WritePost() {
     if (title.length === 0 || description.length === 0) return error();
     try {
       const isEditing=Boolean(id)
-      const url=isEditing?`https://blog-1-d8f0.onrender.com/api/blog/${id}`:`https://blog-1-d8f0.onrender.com/api/blog`
+      const url=isEditing?`https://blog-web-backend-5bci.onrender.com/api/blog/${id}`:`https://blog-web-backend-5bci.onrender.com/api/blog`
       const method=isEditing?"put":"post"
       const res = await axios(
        {method:method,
