@@ -17,7 +17,7 @@ const fetchBlogs=async () => {
   try {
     
    const res= await axios
-      .get(`https://blog-web-backend-5bci.onrender.com/api/blog/?pageNumber=${page}`)
+      .get(`https://blog-1-d8f0.onrender.com/api/blog/?pageNumber=${page}`)
      
         setBlogs(res?.data?.blog || []);
         setTotalPages(res?.data?.totalPages||1)
@@ -47,17 +47,17 @@ const createdDate=(date)=>{
    
         <h2>Welcome {user?.name}</h2>
         <p>
-          {" "}
+       
           Start exploring our latest posts and discover something new today.
           Discover insightful articles, tutorials, and stories from passionate
           writers. Our blog is a place where ideas are shared, knowledge grows,
           and creativity thrives. Whether you're here to learn something new or
           simply explore interesting topics, you're in the right place. Stay
-          curious, keep learning, and enjoy the journey.{" "}
+          curious, keep learning, and enjoy the journey.
         </p>
       </div>
 
-      {/* 3. Check if the array is empty */}
+    
       {blogs.length === 0 ? (
         <div className="card">
           <figure className="notes">
