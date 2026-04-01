@@ -17,7 +17,7 @@ const fetchBlogs=async () => {
   try {
     
    const res= await axios
-      .get(`https://blog-web-backend-5bci.onrender.com/api/blog/?pageNumber=${page}`)
+      .get(`https://blog-web-backend-5bci.onrender.com/api/blog?pageNumber=${page}`)
      
         setBlogs(res?.data?.blog || []);
         setTotalPages(res?.data?.totalPages||1)
