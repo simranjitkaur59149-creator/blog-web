@@ -1,48 +1,128 @@
-.login-bg
-{
-    /* background-image: url("../assets/loginbg.jpg"); */
- width: 100vw;
-height: 100vh;
-   
-}
-.login-bg img
-{
-    width: 80%;
-    object-fit: cover;
+/* Background */
+.login-bg {
+  width: 100%;
+  min-height: 100vh; /* better than 100vh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.login{
-    background-color: white;
-    border-radius: 10px;
-    width: 40%;
-    margin: 5% auto;
-    padding: 20px;
-    border: 2px solid black;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Image */
+.login-bg img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
 }
-label
-{
-   width: 90%;
-   font-weight: 900;
+
+/* Login Card */
+.login {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.input
-{
-    border:2px solid black;
-     width: 90%;
-    height: auto;
+
+/* Label */
+label {
+  width: 100%;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* Input */
+.input {
+  border: 2px solid black;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px;
+  font-size: 0.9rem;
+}
+
+/* Button */
+.btn {
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(76, 178, 212);
+  width: 100%;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ----------- Responsive Breakpoints ----------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .login {
+    max-width: 350px;
+    padding: 20px 15px;
+  }
+
+  .login-bg {
+    padding: 15px;
+  }
+
+  .input {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .login {
+    width: 100%;
+    border-radius: 8px;
+    padding: 18px 12px;
+  }
+
+  .login-bg {
     padding: 10px;
-    margin: 10px auto;
+  }
+
+  label {
+    font-size: 0.85rem;
+  }
+
+  .input {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
 }
-.btn
-{
-    border: 2px solid white;
-    /* border-radius: 10px; */
-    padding: 10px;
-     margin: 10px auto;
-    color: white;
-    background-color: rgb(76, 178, 212);
-    width: 90%;
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .login {
+    max-width: 450px;
+    padding: 30px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
 }
